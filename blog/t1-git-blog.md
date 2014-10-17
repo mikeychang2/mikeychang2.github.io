@@ -4,7 +4,7 @@ Introduction to Git, GitHub, and Version Control
 
 October 12, 2014
 
-Verizon control is like the interactive book series, "Choose Your Own Adventure." You read the book to a certain checkpoint. You are then faced with a few different options, each of which leads to more options, then to one of many endings. If at any point, you decide that you don't like the progress of your chosen storyline, you can revert back to any of the previous stopping points and choose an alternative plot. In the end, you've created a linear story - to your satisfaction.
+Verizon control is like the interactive children's book series, "Choose Your Own Adventure." You read the book to a certain checkpoint. You are then faced with a few different options, each of which leads to more options, then to one of many endings. If at any point, you decide that you don't like the progress of your chosen storyline, you can revert back to any of the previous stopping points and choose an alternative plot. In the end, you've created a linear story - to your satisfaction.
 
 Similarly, version control allows coders to utilize the idea of "branches" to play around and "choose their own adventure." If you decide that the code for a particular branch is progressing the program in a desired manner, you can integrate it to the master, and then continue onwards. Just like in the book series. And if you decide none of the alternate branches are working, you simply go back to a previous stopping point, and choose another option.
 
