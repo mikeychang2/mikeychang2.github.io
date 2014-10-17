@@ -53,7 +53,6 @@ h1{
   padding:10px 0px;
   color:#140A00;
   font-family:Serif;
-  line-height: 120%
 }
 
 #main h2{
@@ -70,6 +69,7 @@ h1{
 
 #main p{
   margin:10px 0px 10px 10px;
+  line-height:120%;
 }
 
 #sidebar{
