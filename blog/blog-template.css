@@ -57,7 +57,7 @@ body, html {
   padding:10px 0px;
   background:#4D505B;
   color:#E6E6E6;
-  height:750px;
+  padding:0px 0px 10px 0px;
 }
 
 #blogpost {
@@ -70,7 +70,7 @@ body, html {
   float:right;
   width:33%;
   padding:10px 10px;
-  height:750px;
+  margin-bottom:10px;
 }
 
 #blogs{
