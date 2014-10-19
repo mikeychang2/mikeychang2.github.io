@@ -1,7 +1,7 @@
 body, html {
   padding:0;
   color:#000;
-  background: gray;
+  background: #4D505B;
   font-family: 'Varela Round', sans-serif;
 }
 
@@ -10,7 +10,7 @@ body, html {
 }
 
 #header {
-  height:100px;
+  height:30px;
   text-align:center;
   background-color:#303035;
   padding:5px 10px;
@@ -55,7 +55,6 @@ body, html {
   float:left;
   width:65%;
   padding:10px 0px;
-  background:#4D505B;
   color:#E6E6E6;
   height:415px;
   margin:0px 0px 5px 0px;
@@ -157,11 +156,18 @@ h5{
 }
 
 #sidebar {
-  background:#4D505B;
   float:right;
   width:33%;
   padding:10px 10px;
   height:415px;
+}
+
+#photo{
+  width:33%;
+  margin:0 auto;
+  position:relative;
+  top: 10px;
+  left:-60px;
 }
 
 #footer {
