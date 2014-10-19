@@ -1,0 +1,177 @@
+body, html {
+  padding:0;
+  color:#000;
+  background: gray;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#container {
+  margin:0 auto;
+}
+
+#header {
+  height:100px;
+  text-align:center;
+  background-color:#303035;
+  padding:5px 10px;
+  margin:0;
+  }
+
+#header h1 {
+  line-height:100px;
+  color:white;
+  font-size: 350%;
+  margin:0;
+}
+
+#nav {
+  width:100%;
+  margin:5px auto;
+  background-color:#16A79D;
+}
+
+#nav ul{
+  list-style-type:none;
+  text-align:center;
+  padding:12px;
+  width:90%;
+  overflow:hidden;
+  margin:0 auto;
+}
+
+#nav li{
+  display:inline-block;
+  width:250px;
+  margin:0 auto;
+}
+
+#nav a{
+  text-transform:uppercase;
+  text-decoration:none;
+  color:white;
+}
+
+#main {
+  float:left;
+  width:65%;
+  padding:10px 0px;
+  background:#4D505B;
+  color:#E6E6E6;
+  height:415px;
+  margin:0px 0px 5px 0px;
+}
+
+#aboutme {
+  background-color:#CF4858;
+  position:relative;
+  width:90%;
+  left:30px;
+  top:20px;
+  padding:20px 10px;
+}
+
+#aboutme h2{
+  float:left;
+  font-size:100px;
+  margin:0;
+  padding: 0px 20px 10px 20px;
+}
+
+#aboutme p{
+  margin:0;
+  padding:5px 10px;
+}
+
+#main h3{
+  position:relative;
+  top:20px;
+  left:20px;
+  margin:30px 0px;
+}
+
+#twitter {
+  color:white;
+  background-color:#F4AC42;
+  position:relative;
+  left:10px;
+  width:30%;
+  margin:10px;
+  float:left;
+  height:150px;
+}
+
+h4{
+  font-size:30px;
+  margin:0;
+  text-align: center;
+  position:relative;
+  top:30px;
+}
+
+h5{
+  text-align:center;
+  position:relative;
+  top:5px;
+}
+
+#twitterbutton{
+  position:relative;
+  top:-10px;
+  left: 90px;
+}
+
+#linkedin {
+  color:white;
+  background-color:#1C6A81;
+  position:relative;
+  top:2px;
+  left:10px;
+  width:30%;
+  margin:8px;
+  float:left;
+  height:150px;
+}
+
+#linkedinbutton{
+  position:relative;
+  top:-10px;
+  left:60px;
+
+}
+
+#github {
+  color:white;
+  background-color:#80628B;
+  position:relative;
+  width:30%;
+  margin:10px;
+  left:8px;
+  float:left;
+  height:150px;
+}
+
+#githubbutton{
+  position:relative;
+  top:-10px;
+  left:100px;
+}
+
+#sidebar {
+  background:#4D505B;
+  float:right;
+  width:33%;
+  padding:10px 10px;
+  height:415px;
+}
+
+#footer {
+  background-color:#303035;
+  clear:both;
+  padding:5px 10px;
+}
+
+#footer p {
+  color:white;
+  margin:0;
+  padding:0;
+}
