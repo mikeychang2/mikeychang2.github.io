@@ -10,18 +10,16 @@ body, html {
 }
 
 #header {
-  height:30px;
-  text-align:center;
+  height:55px;
   background-color:#303035;
-  padding:5px 10px;
+  padding:10px 10px;
   margin:0;
   }
 
 #header h1 {
-  line-height:100px;
   color:white;
-  font-size: 350%;
   margin:0;
+  padding: 10px;
 }
 
 #nav {
@@ -88,72 +86,8 @@ body, html {
   margin:30px 0px;
 }
 
-#twitter {
-  color:white;
-  background-color:#F4AC42;
-  position:relative;
-  left:10px;
-  width:30%;
-  margin:10px;
-  float:left;
-  height:150px;
-}
 
-h4{
-  font-size:30px;
-  margin:0;
-  text-align: center;
-  position:relative;
-  top:30px;
-}
 
-h5{
-  text-align:center;
-  position:relative;
-  top:5px;
-}
-
-#twitterbutton{
-  position:relative;
-  top:-10px;
-  left: 100px;
-}
-
-#linkedin {
-  color:white;
-  background-color:#1C6A81;
-  position:relative;
-  top:2px;
-  left:10px;
-  width:30%;
-  margin:8px;
-  float:left;
-  height:150px;
-}
-
-#linkedinbutton{
-  position:relative;
-  top:-10px;
-  left:100px;
-
-}
-
-#github {
-  color:white;
-  background-color:#80628B;
-  position:relative;
-  width:30%;
-  margin:10px;
-  left:8px;
-  float:left;
-  height:150px;
-}
-
-#githubbutton{
-  position:relative;
-  top:-10px;
-  left:105px;
-}
 
 #sidebar {
   float:right;
