@@ -65,6 +65,10 @@ body, html {
   padding:0px 0px 10px 0px;
 }
 
+.bold {
+  color:#16A79D;
+}
+
 #blogpost {
   margin:0;
   padding:10px 30px;
