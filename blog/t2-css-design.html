@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="blog-template.css" />
+    <title>index</title>
+  </head>
+
+  <body>
+
+    <div id="container">
+         <div id="header">
+            <h1>Michael's Blog</h1>
+            <p>Follow me on my journey through DBC</p>
+        </div>
+
+        <div id="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Projects & Stuff</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <div id="blogpost">
+                <h2>What are the Differences between Static, Absolute, Relative, and Fixed Positioning</h2>
+                <p>Breaking Down CSS Positions</p>
+                <p>October 19, 2014</p>
+                <p>There are 4 different types of CSS positioning properties:</p>
+                <ul>
+                    <li>Static</li>
+                    <li>Absolute</li>
+                    <li>Relative</li>
+                    <li>Fixed</li>
+                <p>There are also 4 different positioning rules: top, bottom, left or right.</p>
+                <p>It might be helpful, first, to envision every single element on the page as a block. Rectangular pixels. Positioning then is useful in moving your object - itself, a block of pixels - to exactly where you want it to go.</p>
+                <p>You define which position, which dictates how the commands are read. Then you determine how many pixels (or em, equivalent to the current font size) to shift from the top, bottom, left or right.</p>
+                <p><b>Static Positioning</b></p>
+                <p>Static is the default positioning for any elements on a Web page. If you don’t put anything, it’s static. If you apply positioning rules (top, left, bottom, right) it will be ignored. It just is.</p>
+                <p><b>Absolute Positioning</b></p>
+                <p>Absolute positioning is like pinpointing GPS coordinates for your object, then putting on it an invisibility cloak.</p>
+                <p>You determine where you want the object by defining the positioning rules. Typically, you only define two of them; so, top OR bottom, left OR right. Similar to GPS coordinates, the positioning rules dictates where your object goes. So, top:20px moves the object 20 pixels from the top of the origin, on your webpage-grid of pixels. Left:10px pushes the object 10px from the left of that same origin.</p>
+                <p>But where exactly is the origin?</p>
+                <p>For absolute positioning, the origin is relative to the first parent element defined by a position other than static. Basically, you figure out what is the parent element of your absolutely-positioned object. Is it absolute, relative, or fixed? If so, the top, left corner is now your origin for your absolutely-positioned object. If not, you move on to the next parent element. Is that absolute, relative, or fixed (AKA not static)?</p>
+                <p>If none of the parent elements have a defined position, then the browser window becomes your origin. The top:20px and left:10px then pushes the object 20px down from the top of the browser (so, basically down)and 10px to the right of the left edge of the browser.</p>
+                <p>One thing to note it that the absolutely-positioned object is completely removed from the normal flow of the page. That is, things can overlap and stack - and get a little bit messy. As far as the other elements are concerned, your absolutely-positioned doesn’t exist. It’s wearing an invisibility cloak.</p>
+                <p><b>Relative Positioning</b></p>
+                <p>Relative positioning is like a ghost-image shifted slightly off-kilter from the actual photograph.</p>
+                <p>The position is relative. But relative to what, exactly?</p>
+                <p>To itself. To the point where it would normally sit if it were static. You simply shift it the defined property (top, bottom, left right) from where it would exist if you decided to let it be.</p>
+                <p>It’s a slight shift; hence, the slightly-altered ghost image. But like this ghost image, other elements behave as if the shift didn’t exist. They can’t see the ghost. It, thus, reacts to the original non-ghost image. </p>
+                <p>Basically, the relatively-positioned object is taken out of the normal document flow, like the absolutely-positioned object, but unlike the absolutely-positioned object, it still affects the elements around it. They just act is if it never moved at all.</p>
+                <p><b>Fixed Positioning</b></p>
+                <p>Fixed positioning is basically absolute positioning. Except that the fixed elements are then fixed in the location. Forever. It’s independent of other elements. Other elements will scroll by, but it will continue to stay in that position on your screen.</p>
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <div id="blogs">
+                <h3>Latest Blog Entries</h3>
+                <p>Follow my journey through DBC</p>
+                <ul>
+                    <li><a href="#">Version Control</a></li>
+                    <li><a href="#">Culture at DBC</a></li>
+                    <li><a href="#">HTML/CSS & Positioning</a></li>
+                </ul>
+            </div>
+
+            <div id="contactlinks">
+                <h4>Let's Connect</h4>
+
+                <div id="twitter">
+                    <h5>Twitter</h5>
+                    <p>Follow me?</p>
+                    <div id="twitterbutton">
+                        <a href="https://twitter.com/maicolchang" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @maicolchang</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </div>
+                </div>
+
+                <div id="linkedin">
+                    <h5>LinkedIn</h5>
+                    <p>Let's Network?</p>
+                    <div id="linkedinbutton">
+                        <a href="http://www.linkedin.com/pub/michael-chang/a/b49/937"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_120x33.png" width="120" height="33" border="0" alt="View Michael Chang's profile on LinkedIn"></a>
+                    </div>
+                </div>
+
+                <div id="google">
+                    <h5>Google+</h5>
+                    <p>Add Me?</p>
+                    <div id="googlebutton">
+                        <a href="https://plus.google.com/103806402911905175754/posts/p/pub"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUrr2sHEenh-Wa9GpKTeu8oV__RWI9XPLIHniqNJHdaNJz9yX6-NiC6os" width="50" height="50" border="0"></a>
+                    </div>
+                </div>
+
+                <div id="github">
+                    <h5>Github</h5>
+                    <p>Let's Merge?</p>
+                    <div id="githubbutton">
+                        <a href="https://github.com/mikeychang2"><img src="http://th05.deviantart.net/fs71/PRE/f/2013/031/c/d/github_by_ovilia1024-d5teqdd.png" width="45" height="45" border="0"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>&copy2014</p>
+        </div>
+
+    </div>
+  </body>
