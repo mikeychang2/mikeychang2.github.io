@@ -1,7 +1,7 @@
 body, html {
   padding:0;
   color:#000;
-  background: gray;
+  background: #4D505B;
   font-family: 'Varela Round', sans-serif;
 }
 
@@ -61,10 +61,8 @@ body, html {
   float:left;
   width:65%;
   padding:10px 0px;
-  background:#4D505B;
   color:#E6E6E6;
   padding:0px 0px 10px 0px;
-  height:750px;
 }
 
 #blogpost {
@@ -73,11 +71,9 @@ body, html {
 }
 
 #sidebar {
-  background:#4D505B;
   float:right;
   width:33%;
   padding:10px 10px;
-  height:750px;
 }
 
 #blogs{
