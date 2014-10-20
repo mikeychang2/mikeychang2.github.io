@@ -51,7 +51,7 @@ body, html {
 
 #main {
   float:left;
-  width:65%;
+  width:100%;
   padding:10px 0px;
   color:#E6E6E6;
   margin:0;
@@ -129,17 +129,6 @@ h5{
   position:relative;
   top:-10px;
   left:105px;
-}
-
-#sidebar {
-  float:right;
-  width:33%;
-  padding:10px 10px;
-}
-
-#photo {
-  position:relative;
-  left:-20px;
 }
 
 #footer {
