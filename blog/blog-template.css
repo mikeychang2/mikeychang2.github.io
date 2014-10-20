@@ -10,18 +10,24 @@ body, html {
 }
 
 #header {
-  height:100px;
-  text-align:center;
+  height:65px;
   background-color:#303035;
-  padding:5px 10px;
+  padding:10px 10px;
   margin:0;
   }
 
 #header h1 {
-  line-height:100px;
   color:white;
-  font-size: 350%;
   margin:0;
+  padding-left:10px;
+}
+
+#header p{
+  color:beige;
+  font-size:20px;
+  margin:0;
+  padding-left:60px;
+  line-height: 40%;
 }
 
 #nav {

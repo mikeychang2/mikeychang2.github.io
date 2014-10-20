@@ -19,14 +19,15 @@ body, html {
 #header h1 {
   color:white;
   margin:0;
+  padding-left:10px;
 }
 
 #header p{
-  color:white;
+  color:beige;
   font-size:20px;
   margin:0;
-  padding-left:40px;
-  line-height: 50%;
+  padding-left:60px;
+  line-height: 40%;
 }
 
 #nav {
