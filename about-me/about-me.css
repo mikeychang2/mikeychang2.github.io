@@ -54,7 +54,6 @@ body, html {
   width:65%;
   padding:10px 0px;
   color:#E6E6E6;
-  height:415px;
   margin:0px 0px 5px 0px;
 }
 
@@ -86,14 +85,10 @@ body, html {
   margin:30px 0px;
 }
 
-
-
-
 #sidebar {
   float:right;
   width:33%;
   padding:10px 10px;
-  height:415px;
 }
 
 #photo {
