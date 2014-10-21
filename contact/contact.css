@@ -89,10 +89,10 @@ h5{
   top:5px;
 }
 
-#twitterbutton{
+.button{
   position:relative;
   top:-10px;
-  left: 100px;
+  left: 170px;
 }
 
 #linkedin {
@@ -107,12 +107,6 @@ h5{
   height:150px;
 }
 
-#linkedinbutton{
-  position:relative;
-  top:-10px;
-  left:100px;
-
-}
 
 #github {
   color:white;
@@ -125,10 +119,15 @@ h5{
   height:150px;
 }
 
-#githubbutton{
+#google {
+  color:white;
+  background-color:#CF4858;
   position:relative;
-  top:-10px;
-  left:105px;
+  width:30%;
+  margin:10px;
+  left:8px;
+  float:left;
+  height:150px;
 }
 
 #footer {
