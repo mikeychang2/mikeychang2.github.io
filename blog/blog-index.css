@@ -63,10 +63,9 @@ body, html {
   padding:10px 0px;
   color:#E6E6E6;
   padding:0px 0px 10px 0px;
-  height:750px;
 }
 
-#blogpost {
+.blogpost {
   margin:0;
   padding:10px 30px;
 }
@@ -76,7 +75,7 @@ body, html {
   color:#16A79D;
 }
 
-#blogpost a:visited{
+.blogpost a:visited{
   color:#80628B;
 }
 
@@ -85,7 +84,6 @@ body, html {
   float:right;
   width:33%;
   padding:10px 10px;
-  height:750px;
 }
 
 #blogs{
@@ -127,10 +125,6 @@ body, html {
   top:30px;
 }
 
-#contactlinks{
-  display:inline-block;
-}
-
 h5{
   text-transform: uppercase;
   font-size:30px;
@@ -155,10 +149,10 @@ h5{
   float:left;
 }
 
-#twitterbutton{
+.button{
   position:relative;
   top: -10px;
-  left: 65px;
+  left: 75px;
 }
 
 #linkedin {
@@ -172,12 +166,6 @@ h5{
   float:left;
 }
 
-#linkedinbutton{
-  position:relative;
-  top:-10px;
-  left: 35px;
-}
-
 #google {
   color:white;
   background-color:#CF4858;
@@ -189,13 +177,6 @@ h5{
   float:left;
 }
 
-#googlebutton{
-  position:relative;
-  top:-10px;
-  left: 70px;
-}
-
-
 #github {
   color:white;
   background-color:#16A79D;
@@ -206,13 +187,6 @@ h5{
   float:left;
   top:35px;
 }
-
-#githubbutton{
-  position:relative;
-  top:-10px;
-  left: 70px;
-}
-
 
 #footer {
   background-color:#303035;
