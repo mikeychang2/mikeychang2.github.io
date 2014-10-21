@@ -119,10 +119,6 @@ body, html {
   top:30px;
 }
 
-#contactlinks{
-  display:inline-block;
-}
-
 h5{
   text-transform: uppercase;
   font-size:30px;
@@ -147,10 +143,10 @@ h5{
   float:left;
 }
 
-#twitterbutton{
+.button{
   position:relative;
   top: -10px;
-  left: 65px;
+  left: 75px;
 }
 
 #linkedin {
@@ -164,12 +160,6 @@ h5{
   float:left;
 }
 
-#linkedinbutton{
-  position:relative;
-  top:-10px;
-  left: 35px;
-}
-
 #google {
   color:white;
   background-color:#CF4858;
@@ -181,13 +171,6 @@ h5{
   float:left;
 }
 
-#googlebutton{
-  position:relative;
-  top:-10px;
-  left: 70px;
-}
-
-
 #github {
   color:white;
   background-color:#16A79D;
@@ -198,13 +181,6 @@ h5{
   float:left;
   top:35px;
 }
-
-#githubbutton{
-  position:relative;
-  top:-10px;
-  left: 70px;
-}
-
 
 #footer {
   background-color:#303035;
