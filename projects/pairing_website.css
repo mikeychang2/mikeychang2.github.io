@@ -1,0 +1,44 @@
+#top {
+        width: 100%;
+        background-color: aquamarine;
+        margin: 0px;
+        height: 60px;
+       /*padding-top: 1px;*/
+    }
+
+.tleft {
+        position: relative;
+        top: 15px;
+        left: 20px;
+    }
+
+.tright {
+        position: relative;
+        left: 400px;
+        top: -35px;
+    }
+
+#box {
+    display: inline;
+    margin: 0px;
+    }
+
+#answers {
+    width: 74%;
+    background-color: gray;
+    float: left;
+    margin: 0px;
+    left: 0px;
+    padding:10px;
+
+    }
+
+#sidebar {
+        width: 24%;
+        /*background-color: red;*/
+        float: right;
+        margin: 0px;
+        right: 50px;
+        padding-left: 9px;
+        /*text-align: center;*/
+    }

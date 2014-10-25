@@ -1,0 +1,66 @@
+html{
+    font-family: Georgia;
+  }
+
+#top {
+    width: 100%;
+    background-color: black;
+    color:white;
+    margin: 0px;
+    height: 60px;
+   /*padding-top: 1px;*/
+    }
+
+.tleft {
+    position: relative;
+    top: 15px;
+    left: 20px;
+   }
+
+.tright {
+    position: relative;
+    left: 975px;
+    top: -35px;
+    }
+
+#box {
+    display: inline;
+    margin: 0px;
+    }
+
+#answers {
+    width: 73%;
+    background-color:gray;
+    float: left;
+    margin: 0px;
+    left: 0px;
+    padding-left:15px;
+}
+
+#answers h2 {
+    font-size: 25px;
+    margin:0px;
+}
+
+#sidebar {
+    width: 23%;
+    /*background-color: red;*/
+    float: right;
+    margin: 0px 10px 0px 0px;
+    right: 50px;
+    padding-left: 9px;
+    /*text-align: center;*/
+    position:relative;
+    right:15px;
+}
+
+#footer {
+    clear:both;
+    background-color:black;
+    color:white;
+    height:30px;
+    padding-top:5px;
+    padding-left:10
+    px;
+}
+
