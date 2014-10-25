@@ -31,6 +31,7 @@
                 <p>In Ruby, we store values for later use by assigning them to variables. Like num1 = 52. Or counter = 3.</p>
                 <p>Arrays and hashes are simply another, better way to organize this data.</p>
                 <p>Both are indexed collections that store objects. The key difference is how you access them. You access both through a key - the key for arrays being an integer associated with the array's numerical index, while the key for hashes being another object.</p>
+                <p><span class="bold">Arrays</span></p>
                 <p>Arrays are simply a list of things. They can be strings, integers, floats - really, any object. We store them within square brackets, where every list item is a variable. Basically, arrays are objects that contain ordered lists of other objects.</p>
                 <p>You create an array named my_array like this:</p>
                 <img src = "https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/arrays-hashes-imgs/my_array_new.png">
@@ -39,44 +40,21 @@
                 <p>Or you can even just put the objects in at the same time you create the array:</p>
                 <img src = "https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/arrays-hashes-imgs/my_array_days.png">
                 <p>You can access each of these objects through the numerical index of an array, which begins at position 0, not position 1. For instance, the first element would be at position 0, the second at position 1, third at position 2, and so on. So, in order to call Wednesday in the above array, you'd input the following:</p>
+                <img src = "https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/arrays-hashes-imgs/my_array_index.png">
+                <p><span class="bold">Hashes</span></p>
+                <p>Hashes, similarly, is a collection of objects, but there are key-value pairings, which associates one variable with an object. This allows you to perform lookup operations on keys to retrieve its corresponding value. Basically, hashes - sometimes called dictionaries or associative arrays - are a mini-database of pairings of keys and values.</p>
+                <p>You can create a hash like this:</p>
                 <img src = "https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/arrays-hashes-imgs/my_hash_new.png">
-                <p>
+                <p>Or this:</p>
+                <img src = "https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/arrays-hashes-imgs/my_hash_bracket.png">
+                <p>Or just like an array, you can put in the key-value pairings when you create the hash:</p>
+                <img src = "https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/arrays-hashes-imgs/my_hash_schedule.png">
+                <p>Unlike arrays though, you access the values through calling the key. In this hash, it essentially organizes the information in pairings - the day of the week and its associated activity.</p>
+                <p>To see what I'm doing on Tuesday, I'd call:</p>
+                <img src = "https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/arrays-hashes-imgs/my_hash_index.png">
+                <p>Or I can just use a planner. Or Google Calendar.</p>
+                <p>But the point is that hashes (and arrays) are great ways to sort out information to access later on in our programs.</p>
 
-my_array[2] = "Wednesday"
-
-Hashes, similarly, is a collection of objects, but there are key-value pairings, which associates one variable with an object. This allows you to perform lookup operations on keys to retrieve its corresponding value. Basically, hashes - sometimes called dictionaries or associative arrays - are a mini-database of pairings of keys and values.
-
-You can create a hash like this:
-
-my_hash = Hash.new
-
-Or this:
-
-my_hah = { }
-
-Or just like an array, you can put in the key-value pairings when you create the hash:
-
-my_hash = { "Monday"    => "Grocery shopping",
-            "Tuesday"   => "Study Ruby",
-            "Wednesday" => "Meeting with boss",
-            "Thursday"  => "Yoga class",
-            "Friday"    => "Work on personal website",
-            "Saturday"  => "Beach with friends"
-            "Sunday"    => "Family dinner" }
-
-Unlike arrays though, you access the values through calling the key. In this hash, it essentially organizes the information in pairings - the day of the week and its associated activity.
-
-To see what I'm doing on Tuesday, I'd call:
-
-my_hash ["Tuesday"] = "Study Ruby"
-
-Or I can just use a planner. Or Google Calendar.
-
-But the point is that hashes (and arrays) are great ways to sort out information to access later on in our programs.
-
-
-
-</p>
             </div>
         </div>
 
