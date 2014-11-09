@@ -25,10 +25,29 @@
 
         <div id="main">
             <div id="blogpost">
-                <h2>Title</h2>
-                <p>Sub-Title</p>
-                <p>Date</p>
-                <p>---Insert post here----</p>
+                <h2>Ruby Classes</h2>
+                <p>Class Methods and Variables vs. Instance Methods and Variables</p>
+                <p>November 9, 2014</p>
+                <p>Classes are first-class objects, each of which are instances of the class Class. Once created, you can set methods and attributes so that whenever a new instance of that class is created, it has contained within it a set of properties via instance variables and methods. Basically, you want to be able to create many objects with some common variables and accessible methods, but you don’t want to have to recreate these objects all individually.</p>
+                <p>To create a class, you use the following syntax:</p>
+                <img src = "https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/ruby-class-imgs/class-syntax.png">
+                <p>You’ll want some setup code, using a constructor is called initialize.</p>
+                <img src = "https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/ruby-class-imgs/initialize.png">
+                <p>It takes a few parameters, so that when you create an instance, it looks like this.</p>
+                <img src = "https://github.com/mikeychang2/mikeychang2.github.io/blob/master/imgs/ruby-class-imgs/create-instance-of-class.png">
+                <p>You can set the instance variables, accessible to your individual instances of the class in one of two ways:</p>
+                <img src = "https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/ruby-class-imgs/instance-variable.png">
+                Or for a concise syntactical variation:
+                <img src = "https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/ruby-class-imgs/attr-accessor.png">
+                <p><span class="bold">Class Methods vs. Instance Methods</span></p>
+                <p>Within the class, you can create different methods to call on each instance of the class. For instance, you can create a simple “greeting” method that spits up a string introducing the person - which you would call on an instance of the class, not the class itself. This is an instance method.</p>
+                <img src = "https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/ruby-class-imgs/instance-method.png">
+                <p>Otherwise, a class method are for anything that does not deal with an individual instance of a class. it applies to the entire class itself. Here are two common ways to create a class method.</p>
+                <img src = "https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/ruby-class-imgs/class-methods.png">
+                <p><span class="bold">Class variables vs. Instance Variables</span></p>
+                <p>Class variables that aren’t accessible from individual instances of the class, but from the class itself. Let’s return a class method that denotes how many instances of the Person class has been created. We use the @@ to denote a variable at class level and @ to denote at an instance level.</p>
+                <p>We create a class variable that corresponds to the number of instances that have been created @@count. We place a counter within the initialize variable that keeps track of this data. Then we create a class method that allows us to access this information. Note that each individual instance of Person, like Roberto from Argentina, doesn’t have access to this information, but only the class itself can keep track of how many people are being created.</p>
+                <img src = "https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/ruby-class-imgs/class-variable.png">
             </div>
         </div>
 
