@@ -43,30 +43,30 @@
                     <li>This returns true/false</li>
                 </ul>
                 <pre> /hazelnut/ =~ "cinnamon hazelnut macchiato"
-                => returns 9 because that is where the character number where the match "hazelnut" begins.
+=> returns 9 because that is where the character number where the match "hazelnut" begins.
                 </pre>
                 <pre> /vanilla/ !~ "cinnamon hazelnut macchiato"
-                => returns true because the string does not contain the substring "vanilla"
+=> returns true because the string does not contain the substring "vanilla"
                 </pre>
                 <p><span class="bold">MatchData Objects</span></p>
                 <p>Setting my_match to a MatchData Object, you have access to a lot more functionality with Regular Expressions. You are creating an instance of the MatchData Class, which allows you to access additional methods and to create, essentially, something similar to an array to access the elements within.</p>
                 <p>First, you create the my_match object.</p>
                 <pre>string = "I can help the next person in line."
-                    my_match = /person/.match(string)
-                    => returns <MatchData "person">
+my_match = /person/.match(string)
+=> returns <MatchData "person">
                 </pre>
                 <p>This returns in an instance of MatchData class being created, which is an Object. You can, thus, call some methods on it.***</p>
                 <p>Calling to_s produces the string of the matched pattern</p>
                 <pre> my_match.to_s
-                => "person"
+=> "person"
                 </pre>
                 <p>Calling the pre_match method returns the substring before the match</p>
                 <pre>my_match.pre_match
-                => "I can help the next "
+=> "I can help the next "
                 </pre>
                 <p>Calling the post_match method returns the substring after the match</p>
                 <pre>my_match.post_match
-                => " in line"
+=> " in line"
                 </pre>
                 <p><span class="bold">Capture Groups</span></p>
                 <p>You can use .* which means any character appearing any number of times along with () parantheses to separate a string into groups. This will store matches for these groups to be called later on.</p>
@@ -74,8 +74,8 @@
                 <pre>/(.*)person(.*)/</pre>
                 <p>The (.*) means a substring containing any character of any character length before or after the substring pattern "person".</p>
                 <pre>my_match = /(.*)person(.*)/.match(string)
-                my_match.captures
-                => ["I can help the next ", " in line"]
+my_match.captures
+=> ["I can help the next ", " in line"]
                 </pre>
                 <p>You can access the MatchData object my_match in the same way as an array with one key difference. The zero index returns the entire string. So, in order to access the first element of the MatchData object, you would call my_match[1].</p>
                 <p><span class="bold">Lookarounds</span></p>
@@ -89,7 +89,7 @@
                 </ul>
                 <p>Lookaheads looks for the context ahead of the match for main pattern, whereas lookbehinds match a pattern everytime it is preceded by another pattern.</p>
                 <p>Reviewing Regular Expression after a more foundational understanding of Ruby proved to be more helpful. I think that with this functional background undestanding of regexps, it will be helpful with writing Ruby programs in the future, particularly with parsing through substrings within strings.</p>
-                <p>***I've been sitting at a cafe for way too long, if you can't tell...</p>
+                <p>***All my example strings have been things I've been hearing for the past few hours. I've been sitting at a cafe for way too long, if you can't tell...</p>
             </div>
         </div>
 
@@ -111,6 +111,8 @@
                     <li><a href="http://mikeychang2.github.io/blog/t6-oop-concepts.html">OOP Concepts: Classes vs. Modules</a></li>
                     <li><a href="http://mikeychang2.github.io/blog/c7-values.html">Values & Affirmations: Battling Stereotye Threat</a></li>
                     <li><a href="http://mikeychang2.github.io/blog/t7-javascript.html">Ruby vs. JavaScript: Looping</a></li>
+                    <li><a href="http://mikeychang2.github.io/blog/c8-conflict.html">Dealing with Conflicts</a></li>
+                    <li><a href="http://mikeychang2.github.io/blog/t8-tech.html">Regular Expressions: Basic Patterns & MatchData Objects</a></li>
                 </ul>
             </div>
 
