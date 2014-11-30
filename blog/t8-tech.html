@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="blog-template.css" />
+    <title>index</title>
+  </head>
+
+  <body>
+
+    <div id="container">
+         <div id="header">
+            <h1>Michael's Blog</h1>
+            <p>Follow me on my journey through DBC</p>
+        </div>
+
+        <div id="nav">
+            <ul>
+                <li><a href="http://mikeychang2.github.io/index.html">Home</a></li>
+                <li><a href="http://mikeychang2.github.io/about-me/index.html">About Me</a></li>
+                <li><a href="http://mikeychang2.github.io/projects/index.html">Projects & Stuff</a></li>
+                <li><a href="http://mikeychang2.github.io/contact/index.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <div id="blogpost">
+                <h2>Ruby Regular Expressions</h2>
+                <p>Basic Pattern Matching, MatchData Objects & Lookarounds</p>
+                <p>November 29, 2014</p>
+                <p>Since beginning DBC 8 weeks (EIGHT. WEEKS. Has it gone by that fast?!), I've encountered the concept of regular expressions a few times. Every time, I tried to tackle the concept within the context of learning another new Ruby concept, it was difficult to comprehend. So, now that I have a foundational understanding of Ruby now, I decided that it was time to get at least a functional understanding of the concept before the on-site phase began.</p>
+                <p>Regular expressions, or regexps, are patterns to match the contents of a string. They test whether a string has a given pattern. They also can extract portions of that match. Ruby regular expressions are Objects because everything in Ruby is an Object. This means that you can pass methods to these objects. It also means that you can set them to variables.</p>
+                <p><span class="bold">Basic Pattern Matching</span></p>
+                <p>Essentially, you are asking, "Does this string contain this pattern?" It almost serves as a search function for a string object. You're typing in the pattern, or substring, which you place within backslash.</p>
+                <p>Positive operator =~</p>
+                <ul>
+                    <li>Asks if this string contains this pattern</li>
+                    <li>This returns the character number where the match begins</p>
+                </ul>
+                <p>Negative operator !~</p>
+                <ul>
+                    <li>Asks if this string does NOT contain this pattern</li>
+                    <li>This returns true/false</li>
+                </ul>
+                <pre> /hazelnut/ =~ "cinnamon hazelnut macchiato"
+                => returns 9 because that is where the character number where the match "hazelnut" begins.
+                </pre>
+                <pre> /vanilla/ !~ "cinnamon hazelnut macchiato"
+                => returns true because the string does not contain the substring "vanilla"
+                </pre>
+                <p><span class="bold">MatchData Objects</span></p>
+                <p>Setting my_match to a MatchData Object, you have access to a lot more functionality with Regular Expressions. You are creating an instance of the MatchData Class, which allows you to access additional methods and to create, essentially, something similar to an array to access the elements within.</p>
+                <p>First, you create the my_match object.</p>
+                <pre>string = "I can help the next person in line."
+                    my_match = /person/.match(string)
+                    => returns <MatchData "person">
+                </pre>
+                <p>This returns in an instance of MatchData class being created, which is an Object. You can, thus, call some methods on it.***</p>
+                <p>Calling to_s produces the string of the matched pattern</p>
+                <pre> my_match.to_s
+                => "person"
+                </pre>
+                <p>Calling the pre_match method returns the substring before the match</p>
+                <pre>my_match.pre_match
+                => "I can help the next "
+                </pre>
+                <p>Calling the post_match method returns the substring after the match</p>
+                <pre>my_match.post_match
+                => " in line"
+                </pre>
+                <p><span class="bold">Capture Groups</span></p>
+                <p>You can use .* which means any character appearing any number of times along with () parantheses to separate a string into groups. This will store matches for these groups to be called later on.</p>
+                <p>For instance,</p>
+                <pre>/(.*)person(.*)/</pre>
+                <p>The (.*) means a substring containing any character of any character length before or after the substring pattern "person".</p>
+                <pre>my_match = /(.*)person(.*)/.match(string)
+                my_match.captures
+                => ["I can help the next ", " in line"]
+                </pre>
+                <p>You can access the MatchData object my_match in the same way as an array with one key difference. The zero index returns the entire string. So, in order to access the first element of the MatchData object, you would call my_match[1].</p>
+                <p><span class="bold">Lookarounds</span></p>
+                <p>Up until now, we've looked at regular expressions in terms of basic pattern matching. However, beyond simply matching a pattern, we can also take it one step further by defining the context for that particular match. Essentially, you can return a match when and only when it is surrounded by a certain context.</p>
+                <p>The operators:</p>
+                <ul>
+                    <li>Positive Lookahead: ?=</li>
+                    <li>Negative Lookahead: ?!</li>
+                    <li>Positive Lookbehind: ?<=</li>
+                    <li>Negative Lookbehind: ?<!</li>
+                </ul>
+                <p>Lookaheads looks for the context ahead of the match for main pattern, whereas lookbehinds match a pattern everytime it is preceded by another pattern.</p>
+                <p>Reviewing Regular Expression after a more foundational understanding of Ruby proved to be more helpful. I think that with this functional background undestanding of regexps, it will be helpful with writing Ruby programs in the future, particularly with parsing through substrings within strings.</p>
+                <p>***I've been sitting at a cafe for way too long, if you can't tell...</p>
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <div id="blogs">
+                <h3>Latest Blog Entries</h3>
+                <p>Follow my journey through DBC</p>
+                <ul>
+                    <li><a href="http://mikeychang2.github.io/blog/t1-git-blog.html">Version Control</a></li>
+                    <li><a href="http://mikeychang2.github.io/blog/c1-chefs-kitchen.html">Culture at DBC</a></li>
+                    <li><a href="http://mikeychang2.github.io/blog/t2-css-design.html">HTML/CSS & Positioning</a></li>
+                    <li><a href="http://mikeychang2.github.io/blog/t3-arrays-hashes.html">Arrays & Hashes</a></li>
+                    <li><a href="http://mikeychang2.github.io/blog/c3-thinking-style.html">Reflections on Gregorc Learning Styles</a></li>
+                    <li><a href="http://mikeychang2.github.io/blog/t4-enumerable-methods.html">Enumerable Methods: Group_by</a></li>
+                    <li><a href="http://mikeychang2.github.io/blog/c4-tech-issues.html">Lack of Diversity in Tech</a></li>
+                    <li><a href="http://mikeychang2.github.io/blog/t5-ruby-classes.html">Ruby Classes: Methods & Variables</a></li>
+                    <li><a href="http://mikeychang2.github.io/blog/c5-feedback.html">Learning through Pairing & Feedback</a></li>
+                    <li><a href="http://mikeychang2.github.io/blog/c6-stereotype-threat.html">Stereotype Threat & Model Minority Myth</a></li>
+                    <li><a href="http://mikeychang2.github.io/blog/t6-oop-concepts.html">OOP Concepts: Classes vs. Modules</a></li>
+                    <li><a href="http://mikeychang2.github.io/blog/c7-values.html">Values & Affirmations: Battling Stereotye Threat</a></li>
+                    <li><a href="http://mikeychang2.github.io/blog/t7-javascript.html">Ruby vs. JavaScript: Looping</a></li>
+                </ul>
+            </div>
+
+            <div id="contactlinks">
+                <h4>Let's Connect</h4>
+
+                <div id="twitter">
+                    <h5>Twitter</h5>
+                    <p>Follow me?</p>
+                    <div class="button">
+                        <a href="https://twitter.com/maicolchang"><img src="https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/twitter-32.png"></a>
+                    </div>
+                </div>
+
+                <div id="linkedin">
+                    <h5>LinkedIn</h5>
+                    <p>Let's Network?</p>
+                    <div class="button">
+                        <a href="http://www.linkedin.com/pub/michael-chang/a/b49/937"><img src="https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/linkedin-32.png"></a>
+                    </div>
+                </div>
+
+                <div id="google">
+                    <h5>Google+</h5>
+                    <p>Add Me?</p>
+                    <div class="button">
+                          <a href="https://plus.google.com/u/0/103806402911905175754/posts/p/pub"><img src="https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/google-plus-32.png"></a>
+                    </div>
+                </div>
+
+                <div id="github">
+                    <h5>Github</h5>
+                    <p>Let's Merge?</p>
+                    <div class="button">
+                         <a href="https://github.com/mikeychang2"><img src="https://raw.githubusercontent.com/mikeychang2/mikeychang2.github.io/master/imgs/github-32.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>&copy2014</p>
+        </div>
+
+    </div>
+  </body>
