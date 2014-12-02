@@ -54,7 +54,7 @@ body, html {
   width:65%;
   padding:10px 0px;
   color:#E6E6E6;
-  margin:0px 0px 5px 0px;
+  margin:0px 0px 10px 0px;
 }
 
 #aboutme {
@@ -76,6 +76,13 @@ body, html {
 #aboutme p{
   margin:0;
   padding:5px 10px;
+  line-height: 130%;
+}
+
+#aboutme h4 {
+  padding: 0px 10px;
+  font-size: 120%;
+  font-weight: bold;
 }
 
 #main h3{
