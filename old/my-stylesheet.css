@@ -109,13 +109,13 @@ h4{
 h5{
   text-align:center;
   position:relative;
-  top:5px;
+  top:15px;
 }
 
 #twitterbutton{
   position:relative;
-  top:-10px;
-  left: 100px;
+  top:6px;
+  left: 107px;
 }
 
 #linkedin {
@@ -132,8 +132,8 @@ h5{
 
 #linkedinbutton{
   position:relative;
-  top:-10px;
-  left:100px;
+  top: 6px;
+  left:107px;
 
 }
 
@@ -150,8 +150,8 @@ h5{
 
 #githubbutton{
   position:relative;
-  top:-10px;
-  left:105px;
+  top:6px;
+  left:110px;
 }
 
 #sidebar {
