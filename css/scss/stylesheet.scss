@@ -7,7 +7,6 @@ $margin: 1%;
 $column: ($container-width / $column-count);
 
 body {
-  font: 100% $font-stack;
   color: $primary-color;
   width: 80%;
   margin: 0 auto;
@@ -35,7 +34,6 @@ nav {
   display:inline-block;
   width: 100%;
   border-bottom: 2px gray solid;
-  padding-bottom: 1%;
   .name-box{
     display: inline-block;
     float:left;
