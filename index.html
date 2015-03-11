@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="description" content="The personal website and portfolio of Michael Chang, a full-stack web developer based in San Francisco, CA.">
 
+    <!-- Fonts -->
     <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
+
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="css/scss/stylesheet.css" />
+
+    <!-- Javascript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/application.js"></script>
 
     <title>Michael Chang, Full-Stack Web Developer</title>
   </head>
@@ -31,10 +38,23 @@
       <main>
         <div class="wrapper">
           <div class="intro">
-            <p id="web"><span class="bold-text">Full-Stack</span>Web Developer</p>
-            <p id="marketer">Digital<span class="bold-text">Marketer</span></p>
-            <p id="traveler"><span class="bold-text">Avid</span>Traveler</p>
-            <p id="yoga">Yoga<span class="bold-text">Instructor</span></p>
+            <p id="name"><span class="bold-text">Michael</span>Chang</>
+
+            <a href="#"><p id="web">Full-Stack<span class="bold-text">Web Developer</span></p></a>
+
+            <p class="web-skills hidden small-font">Ruby on Rails  &bull;  Javascript &bull; HTML/CSS</p>
+
+            <a href="#"><p id="marketer"><span class="bold-text">Digital</span>Marketer</p></a>
+
+            <p class="marketing-skills hidden small-font">Search & PPC  &bull;  Social Media  &bull;  Mobile & Video Marketing</p>
+
+            <a href="#"><p id="traveler">Avid<span class="bold-text">Traveler</span></p></a>
+
+            <p class="travel-skills hidden small-font"> Adaptable  &bull; Team Player &bull; Open-minded &bull; Problem Solver</p>
+
+            <a href="#"><p id="yoga"><span class="bold-text">Yoga</span>Instructor</p></a>
+
+            <p class="yoga-skills hidden small-font">Optimistic &bull; Good Communicator &bull; Balanced &bull; Empathetic</p>
           </div>
 
           <div class="photo">
@@ -47,10 +67,10 @@
           <h1><i class="fa fa-paper-plane-o"></i>   About Me</h1>
           <div class="about-me-text">
             <h2>¡Hola!</h2>
-            <p>I'm <span class="bold-text">Michael Chang</span> from Los Angeles &  based in San Francisco.</p>
+            <p>I'm <span class="bold-text">Michael Chang</span>.I'm from Los Angeles & based in San Francisco.</p>
             <p>I'm a full-stack web developer & a recent <a href="http://devbootcamp.com/">Dev BootCamp</a> graduate. </p>
             <p>I'm also a digital marketer, avid traveler & yoga instructor.</p>
-            <p>I love tackling new technologies & learning languages, both spoken and computer. I speak English (duh), Spanish, Mandarin, and (a little) Portuguese. I love <span class="bold-text">Ruby, Javascript & HTML/CSS</span>.
+            <p>I love tackling new technologies & learning languages, both spoken and computer. I speak English, Spanish, Mandarin, and (a little) Portuguese. I write <span class="bold-text">Ruby, Javascript & HTML/CSS</span>.
             <p>And I see all these as a way to cultivate a genuine connection with people through words, code, and movement. As I dive deeper into my newfound love for web development, I hope to merge all of my passions into creating <span class="bold-text">meaningful</span> projects and making <span class="bold-text">impactful</span> things.</p>
             <p>Programming allows us to insert our voices and unique perspectives from our own slices of life into re-shaping this world via technology. I see development as a way to <span class="bold-text">transform</span> how I see and interact with the world around me. As a means to continual growth and learning. As a path towards creative and technical potential.</p>
             <h3>Let's link up. Let's connect. Let's break things & make things.</h3>
@@ -61,25 +81,42 @@
           <h1><i class="fa fa-suitcase"></i>  Projects</h1>
 
           <ul class="projects-list">
-            <li>
-              <a href="http://traverse-app.herokuapp.com">
+            <li id="traverse-group">
                 <img src="http://i.imgur.com/OrLoLvg.jpg" alt="Traverse: Digital Travel Scrapbook">
                 <span class="text-content"><span>Traverse</span></span>
-              </a>
             </li>
 
-            <li>
-              <a href="http://traverse-app.herokuapp.com">
+            <li class="traverse-group-description indent hidden">
+              <h2>Traverse</h2>
+              <p>A digital travel scrapbook that allows you to easily & beautifully document your travel experiences. Relive your experiences & share your recommendations with friends. Segment your journey chronologically, via tags, or in a Google Maps overview.</p>
+              <p>Decoupled web app with Rails API backend and Angular frontend. Uses JWT Authentication, Facebook/Instagram OAuth, Google Maps/Yelp API. Bootstrap.</p>
+              <p>Led a team of four. Built in just 7 days, over 100 hours</p><br>
+
+              <a href="http://traverse-app.herokuapp.com"><i class="fa fa-arrow-right fa-3x"></i></a>
+            </li>
+
+            <li id="traverse-personal">
                 <img src="http://i.imgur.com/4QRb1PO.png" alt="Travel Journal">
-                <span class="text-content"><span>Traverse 1.0</span></span>
-              </a>
+                <span class="text-content"><span>Travel Journal</span></span>
             </li>
 
-            <li>
-              <a href="http://mikeychang2.github.io/old">
-                <img src="http://i.imgur.com/a71wTja.png" alt="My Website">
-                <span class="text-content"><span>Personal Site 1.0</span></span>
-              </a>
+            <li class="traverse-personal-description indent hidden">
+              <h2>Travel Journal</h2>
+              <p>A simple travel journal enabling you to jot down some notes, keep track of places you’ve visited, and display travel photos from your trip.</p>
+              <p>Built using Ruby, Sinatra, HTML/CSS and Javascript (jQuery and AJAX). I also utilized the Yelp API and Instagram OAuth to access user photos.</p>
+              <p>This mini-project inspired Traverse - a full-fledged digital scrapbook that served as final capstone group project at DBC.</p><br>
+              <a href="http://traverse-journal.herokuapp.com"><i class="fa fa-arrow-right fa-3x"></i></a>
+            </li>
+
+            <li id="personal-blog">
+              <img src="http://i.imgur.com/a71wTja.png" alt="My Website">
+              <span class="text-content"><span>Personal Website, Version 1.0</span></span>
+            </li>
+
+            <li class="personal-blog-description indent hidden">
+              <h2>My Personal Website, Version 1.0</h2>
+              <p>This personal website & blog details technical concepts and cultural understandings of my career change and journey through Dev Boot Camp (October 2014 - Feburary 2015.</p><br>
+              <a href="mikeychang2.github.io"><i class="fa fa-arrow-right fa-3x"></i></a>
             </li>
           </ul>
         </section>
